@@ -1,0 +1,61 @@
+.expense-item {
+    background-color: rgb(10, 10, 10);
+    justify-content: space-between;
+    display: flex;
+    padding: 20px;
+    border-radius: 10px;
+    margin-left:10%;
+    margin-right:10%;
+    margin-top: 20px;
+
+}
+.expense-details{
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    flex: 1 1;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.expense-details h2{
+    color: rgb(199, 215, 221);
+    font-weight: bolder;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.expense-amount{
+    /* color: aliceblue; */
+    color: aliceblue;
+    padding:20px;
+    font-weight: bolder;
+    border-radius: 10px;
+    border-width: 1px;
+    /* border-color: aliceblue; */
+    border-style: solid;
+    border-color:teal;
+    /* background-color: rgb(1, 36, 36);
+     */
+     background-color: black;
+     box-shadow: 0px 0px 10px black;
+}
+
+.expense-item-date-day{
+    font-weight: bold;
+    font-size: 25px;
+    color: white;
+    padding-left: 20px;
+
+}
+.expense-item-date-month{
+    font-size: 20px;
+    color: white;
+    padding-left: 10px;
+
+}
+.expense-item-date-year{
+    font-weight: bold;
+    font-size: 25px;
+    color: whitesmoke;
+    padding-left: 10px;
+
+}
