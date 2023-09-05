@@ -12,7 +12,7 @@ const NewExpense = ({ addExpense }) => {
       ...enteredNewExpenseData,
       id: Math.random().toString(),
     }
-    console.log(expenseData, "hehe");
+    console.log(expenseData, "hehe version 2");
     addExpense(expenseData);
 
   };
