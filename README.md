@@ -1,2 +1,2 @@
 # expense-tracker
-For practice only 
+For practice only ..
