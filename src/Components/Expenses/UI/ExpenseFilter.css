@@ -1,0 +1,18 @@
+.expense-filter{
+    display: flex;
+    justify-content: end;
+    padding-left:10%;
+    padding-right:10%;
+
+}
+.expense-filter-menu label{
+    color: aliceblue;
+    font-weight: bold;
+
+    
+}
+
+.option{
+    color:red;
+    font-weight: bold;
+}

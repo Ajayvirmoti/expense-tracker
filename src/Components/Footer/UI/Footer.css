@@ -1,0 +1,48 @@
+.footer{
+    margin-top: 10%;
+    display: flex;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: rgb(9, 51, 51);
+    justify-content: space-between;
+    opacity: .4;
+}
+
+.about{
+    opacity: 1;
+    color: whitesmoke;
+    width: 40%;
+    font-size: smaller;
+    text-align: justify;
+}
+
+.quick_link{
+    color: whitesmoke;
+    padding-left: 5%;
+    font-size: smaller;
+    
+    
+}
+
+.quick_link a{
+    opacity: 1;
+    color: whitesmoke;
+    text-decoration: none;
+    
+}
+
+.quick_link a:visited{
+    color: teal;
+}
+
+.contact{
+    color: whitesmoke;
+    padding-left: 5%;
+    font-size: smaller;
+
+}
+.contact a{
+    display: block;
+    text-decoration: none;
+    color: whitesmoke;
+}

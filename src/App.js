@@ -1,35 +1,71 @@
-import logo from './logo.svg';
 import './App.css';
-import ExpenseItem from "./Components/Expenses/ExpenseItem";
 import Expenses from './Components/Expenses/Expenses';
+import React, { useState } from 'react';
+import Footer from "./Components/Footer/Footer";
+import ExpenseForm from './Components/NewExpense/ExpenseForm';
+import NewExpense from './Components/NewExpense/NewExpense';
 
-function App() {
+const App = ()=> {
+  // console.log("app reloaded");
 
-  const expenses = [
+  let expenses = [
     {
       id: 'e1',
       title: 'Toilet Paper',
       amount: 94.12,
-      date: new Date(2020, 7, 14),
+      date: new Date(2023, 7, 14),
     },
-    { id: 'e2', title: 'New TV', amount: 799.49, date: new Date(2021, 2, 12) },
+    { 
+      id: 'e2', 
+      title: 'New TV', 
+      amount: 799.49, 
+      date: new Date(2023, 7, 12) },
     {
       id: 'e3',
       title: 'Car Insurance',
       amount: 294.67,
-      date: new Date(2021, 2, 28),
+      date: new Date(2023, 7, 28),
     },
     {
-      id: 'e4',
+      id: 'e5',
       title: 'New Desk (Wooden)',
       amount: 450,
-      date: new Date(2021, 5, 12),
+      date: new Date(2023, 7, 12),
     },
+
+    {
+      id:'e6',
+      title:'Books',
+      amount: 634,
+      date: new Date(2023, 7, 23),
+
+    }
   ];
 
+  const [ExpenseData,addNewExpenseData] = useState(expenses);
+  const addExpenseHandler = (Expense) =>{
+    addNewExpenseData(
+      (previousExpense) =>{
+        return [Expense,...previousExpense];
+      }
+    );
+    // expenses = [...expenses,]
+    console.log(expenses);
+  };
+
+  // const a = [...expenses,NewExpense];
+  // console.log(a);
+
+  // This is the alternaative code of the jsx code 
+   
+  // return(
+  //   React.createElement('div', {}, React.createElement(Expenses,{ expenses:expenses }))
+  // );
   return (
     <div>
-      <Expenses expenses={expenses} />
+      <NewExpense addExpense={addExpenseHandler}/>
+      <Expenses expenses={ExpenseData} />
+      <Footer/>
     </div>
   );
 }

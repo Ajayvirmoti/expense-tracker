@@ -1,0 +1,92 @@
+.new-expense__form {
+    margin-bottom: 20px;
+    /* display:grid; */
+    margin-left: 20%;
+    margin-right: 20%;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: rgb(9, 51, 51);
+    justify-content: space-between;
+}
+
+.new-expense__controls {
+    display: flex;
+    /* block-size: 80px; */
+    justify-content: space-between;
+
+}
+
+.new-expense__control {
+    /* width: fit-content; */
+    width: max-content;
+    font-size: larger;
+    font-weight: bold;
+    color: aliceblue;
+    padding-left: 20px;
+    /* display: grid; */
+    padding-bottom: 20px;
+}
+
+.new-expense__control input {
+    margin-top: 10px;
+    padding: 15px;
+    /* height: 30px; */
+    background-color: rgb(100, 184, 184);
+    color: aliceblue;
+    font-size: large;
+    border-radius: 10px; 
+}
+
+input {
+    width: 100%;
+}
+
+.new-expense__Home {
+    padding-top: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+    /* padding-bottom: 20px; */
+    /* border-radius: 10px; */
+}
+
+.new-expense__actions {
+    display: flex;
+    justify-content: right;
+    /* justify-content: space-between; */
+    /* padding: 20px; */
+    /* margin-right:0px; */
+    /* margin-left: 60%; */
+    /* margin-top: 20px; */
+    /* position:relative; */
+    /* float: right; */
+    /* position:relative ; */
+    flex: content;
+    /* justify-content:flex-end ; */
+
+}
+
+/* .button{
+    display: flex;
+} */
+
+.button button{
+    margin-top: 20px;
+    display:flex;
+    border-radius: 10px;
+    /* float: left; */
+    font-size: large;
+    font-weight: bold;
+    /* border-style:solid; */
+    border-color: teal;
+    border-width: 0.1px;
+    /* padding: 30px; */
+    background-color: rgb(0, 24, 24);
+    color: aliceblue;
+    padding: 20px;
+    /* position: relative; */
+}
+
+.new-expense__actions button:hover {
+    background-color: rgb(0, 26, 26);
+
+}
