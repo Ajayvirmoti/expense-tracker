@@ -6,13 +6,13 @@ import ExpenseForm from "./ExpenseForm";
 
 
 
-const NewExpense = ({addExpense}) => {
+const NewExpense = ({ addExpense }) => {
   const saveNewExpenseDataHandler = (enteredNewExpenseData) => {
     const expenseData = {
       ...enteredNewExpenseData,
       id: Math.random().toString(),
     }
-    console.log(expenseData);
+    console.log(expenseData, "hehe");
     addExpense(expenseData);
 
   };
