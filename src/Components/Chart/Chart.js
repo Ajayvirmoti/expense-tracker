@@ -5,9 +5,9 @@ import "./Chart.css";
 
 const Chart = () =>{
     return(
-        <Card className="chart-body">
+        <div className="chart">
 
-        </Card>
+        </div>
     );
 
 }

@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import Footer from "./Components/Footer/Footer";
 import ExpenseForm from './Components/NewExpense/ExpenseForm';
 import NewExpense from './Components/NewExpense/NewExpense';
-import Graph from './Components/Chart/Graph';
+import Graph from './Components/Chart/BarGraph';
 import Chart from './Components/Chart/Chart';
 
 const App = ()=> {
@@ -65,7 +65,7 @@ const App = ()=> {
   // );
   return (
     <div>
-      <Chart></Chart>
+      {/* <Chart></Chart> */}
       {/* <Graph></Graph> */}
       <NewExpense addExpense={addExpenseHandler}/>
       <Expenses expenses={ExpenseData} />
