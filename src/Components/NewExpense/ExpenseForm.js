@@ -49,11 +49,13 @@ const ExpenseForm = (props) => {
 
   }
 
-  const submitAlert = <div></div>;
+  
 
   // Submit Button handler 
   const submitHandler = (event) => {
+    // prevent reloading of page on submition of form 
     event.preventDefault();
+
     if (inputAmount == "" || inputDate == "Invalid Date" || inputTitle == "") {
       alert("Invalid Data")
     } else {
