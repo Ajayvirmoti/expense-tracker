@@ -2,19 +2,15 @@ import React, { useState } from "react";
 import NewExpense from "./NewExpense";
 import './UI/FormGateWay.css';
 
-const FormGateWay = () =>{
-    
-
-    const FormGatWayHandler = () =>{
-
-        
+const FormGateWay = ({onSwitchToExpenseForm}) =>{
+    const onClickHandler = () =>{
+        onSwitchToExpenseForm();
 
     }
-
     return (
         <div className="form-gate-way-body">
             <div className="gatway-button">
-            <button onClick={FormGatWayHandler} className = "form-gate-way-body-button"> Add New Expnse </button>
+            <button onClick={onClickHandler} className = "form-gate-way-body-button"> Add New Expnse </button>
             </div>
         </div>
 

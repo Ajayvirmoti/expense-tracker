@@ -6,6 +6,7 @@ import ExpenseForm from './Components/NewExpense/ExpenseForm';
 import NewExpense from './Components/NewExpense/NewExpense';
 import Graph from './Components/Chart/BarGraph';
 import Chart from './Components/Chart/Chart';
+import FormGateWay from './Components/NewExpense/FormGateWay';
 
 const App = ()=> {
   // console.log("app reloaded");
@@ -63,11 +64,25 @@ const App = ()=> {
   // return(
   //   React.createElement('div', {}, React.createElement(Expenses,{ expenses:expenses }))
   // );
+
+  // to add Form 
+
+  const [showExpenseForm, setShowExpenseForm] = useState(false);
+
+  const handleSwitchToExpenseForm = () => {
+    setShowExpenseForm(true);
+  };
+
+
   return (
     <div>
-      {/* <Chart></Chart> */}
-      {/* <Graph></Graph> */}
-      <NewExpense addExpense={addExpenseHandler}/>
+
+      {
+        showExpenseForm ? (<NewExpense addExpense={addExpenseHandler}/>) : (
+          <FormGateWay onSwitchToExpenseForm={handleSwitchToExpenseForm} />
+        )
+      }
+      {/* <NewExpense addExpense={addExpenseHandler}/> */}
       <Expenses expenses={ExpenseData} />
       <Footer/>
     </div>
