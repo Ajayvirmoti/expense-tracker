@@ -9,12 +9,12 @@ const NewExpense = ({ addExpense }) => {
   
   const [formGetWay,expenseForm] = useState();
   
-  const FormClickHandler = () => {
-    expenseForm((preState) =>{
-      return "hello";
-    })
+  // const FormClickHandler = () => {
+  //   expenseForm((preState) =>{
+  //     return "hello";
+  //   })
     
-  }
+  // }
   
   
   const saveNewExpenseDataHandler = (enteredNewExpenseData) => {
