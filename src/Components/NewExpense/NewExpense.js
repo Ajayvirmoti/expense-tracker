@@ -22,7 +22,11 @@ const NewExpense = ({ addExpense }) => {
       ...enteredNewExpenseData,
       id: Math.random().toString(),
     }
+<<<<<<< Updated upstream
     console.log(expenseData);
+=======
+    console.log(expenseData, "hehe v1");
+>>>>>>> Stashed changes
     addExpense(expenseData);
 
   };
