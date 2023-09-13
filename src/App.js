@@ -10,7 +10,8 @@ import FormGateWay from './Components/NewExpense/FormGateWay';
 
 const App = ()=> {
   // console.log("app reloaded");
-
+// hello 
+  console.log("hello")
   let expenses = [
     {
       id: 'e1',
