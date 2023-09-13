@@ -10,8 +10,8 @@ import FormGateWay from './Components/NewExpense/FormGateWay';
 
 const App = ()=> {
   // console.log("app reloaded");
-// hello 
-  console.log("hello")
+// // hello 
+//   console.log("hello")
   let expenses = [
     {
       id: 'e1',
@@ -70,8 +70,8 @@ const App = ()=> {
 
   const [showExpenseForm, setShowExpenseForm] = useState(false);
 
-  const handleSwitchToExpenseForm = () => {
-    setShowExpenseForm(true);
+  const handleSwitchToExpenseForm = (flag) => {
+    setShowExpenseForm(flag);
   };
 
 
@@ -79,7 +79,7 @@ const App = ()=> {
     <div>
 
       {
-        showExpenseForm ? (<NewExpense addExpense={addExpenseHandler}/>) : (
+        showExpenseForm ? (<NewExpense addExpense={addExpenseHandler} onCloseForm = {handleSwitchToExpenseForm}/>) : (
           <FormGateWay onSwitchToExpenseForm={handleSwitchToExpenseForm} />
         )
       }

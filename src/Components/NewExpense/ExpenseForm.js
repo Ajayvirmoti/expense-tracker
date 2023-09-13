@@ -86,6 +86,10 @@ const ExpenseForm = (props) => {
 
   };
 
+  const FormCloseHandler = () =>{
+    props.onCloseForm_(false);
+  }
+
 
 
 
@@ -108,7 +112,7 @@ const ExpenseForm = (props) => {
       </div>
       <div className="new-expense__actions">
         <div className="button"> 
-          <button> Close</button>
+          <button onClick={FormCloseHandler}> Close</button>
         </div>
         <div className="button">
           <button type="submit"> Add Expense</button>

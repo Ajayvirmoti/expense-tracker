@@ -4,7 +4,7 @@ import './UI/FormGateWay.css';
 
 const FormGateWay = ({onSwitchToExpenseForm}) =>{
     const onClickHandler = () =>{
-        onSwitchToExpenseForm();
+        onSwitchToExpenseForm(true);
 
     }
     return (

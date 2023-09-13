@@ -4,10 +4,8 @@ import "./UI/ExpenseForm.css";
 import "./UI/NewExpense.css";
 import ExpenseForm from "./ExpenseForm";
 
-const NewExpense = ({ addExpense }) => {
+const NewExpense = ({ addExpense,onCloseForm }) => {
   // const renderer = <FormGateWay className="new-expense"/>
-  
-  const [formGetWay,expenseForm] = useState();
   
   // const FormClickHandler = () => {
   //   expenseForm((preState) =>{
@@ -22,18 +20,17 @@ const NewExpense = ({ addExpense }) => {
       ...enteredNewExpenseData,
       id: Math.random().toString(),
     }
-<<<<<<< Updated upstream
-    console.log(expenseData);
-=======
-    console.log(expenseData, "hehe v1");
->>>>>>> Stashed changes
     addExpense(expenseData);
 
   };
 
+  const FormCloseHandler = (flag) =>{
+    onCloseForm(flag);
+  }
+
   return (
     <div className="new-expense">
-      <ExpenseForm onSaveExpenseData = {saveNewExpenseDataHandler}/>
+      <ExpenseForm onSaveExpenseData = {saveNewExpenseDataHandler} onCloseForm_ = {FormCloseHandler}/>
     </div>
   );
 }
