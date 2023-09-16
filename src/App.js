@@ -44,6 +44,13 @@ const App = () => {
       date: new Date(2023, 8, 23),
 
     }
+    {
+      id: 'e7',
+      title: 'tea',
+      amount: 200,
+      date: new Date(2023, 3, 23),
+
+    }
   ];
 
   console.log(expenses);
