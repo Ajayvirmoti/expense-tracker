@@ -3,7 +3,7 @@ import './UI/ExpenseFilter.css';
 const ExpenseFilter =  (props)=>{
     const onClickHandler = (event) =>{
         props.onChnageYear(event.target.value);
-        // console.log(event.target.value);
+        console.log(event.target.value);
     }
     return(
         <div className="expense-filter">

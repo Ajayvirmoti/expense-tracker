@@ -7,11 +7,10 @@ import NewExpense from './Components/NewExpense/NewExpense';
 import Graph from './Components/Chart/BarGraph';
 import Chart from './Components/Chart/Chart';
 import FormGateWay from './Components/NewExpense/FormGateWay';
-
-const App = ()=> {
+const App = () => {
   // console.log("app reloaded");
-// // hello 
-//   console.log("hello")
+  // // hello 
+  //   console.log("hello")
   let expenses = [
     {
       id: 'e1',
@@ -19,16 +18,17 @@ const App = ()=> {
       amount: 94.12,
       date: new Date(2023, 7, 14),
     },
-    { 
-      id: 'e2', 
-      title: 'New TV', 
-      amount: 799.49, 
-      date: new Date(2023, 7, 12) },
+    {
+      id: 'e2',
+      title: 'New TV',
+      amount: 799.49,
+      date: new Date(2023, 8, 12)
+    },
     {
       id: 'e3',
       title: 'Car Insurance',
       amount: 294.67,
-      date: new Date(2023, 7, 28),
+      date: new Date(2023, 2, 28),
     },
     {
       id: 'e5',
@@ -38,30 +38,31 @@ const App = ()=> {
     },
 
     {
-      id:'e6',
-      title:'Books',
+      id: 'e6',
+      title: 'Books',
       amount: 634,
-      date: new Date(2023, 7, 23),
+      date: new Date(2023, 8, 23),
 
     }
   ];
 
-  const [ExpenseData,addNewExpenseData] = useState(expenses);
-  const addExpenseHandler = (Expense) =>{
+  console.log(expenses);
+  const [ExpenseData, addNewExpenseData] = useState(expenses);
+  const addExpenseHandler = (Expense) => {
     addNewExpenseData(
-      (previousExpense) =>{
-        return [Expense,...previousExpense];
+      (previousExpense) => {
+        return [Expense, ...previousExpense];
       }
     );
     // expenses = [...expenses,]
-    console.log(expenses);
+    // console.log(expenses);
   };
 
   // const a = [...expenses,NewExpense];
   // console.log(a);
 
   // This is the alternaative code of the jsx code 
-   
+
   // return(
   //   React.createElement('div', {}, React.createElement(Expenses,{ expenses:expenses }))
   // );
@@ -73,18 +74,28 @@ const App = ()=> {
   const handleSwitchToExpenseForm = (flag) => {
     setShowExpenseForm(flag);
   };
+  // console.log(ExpenseData.map());
+  
 
+  // month[0] = 0;
+  // for(let i = 0;i<12;i++){
+  //   month[i] = 0;
+  // }
+  // let count = 0;
+  // console.log(month);
+  
+  // console.log(month)
 
   return (
     <div>
 
       {
-        showExpenseForm ? (<NewExpense addExpense={addExpenseHandler} onCloseForm = {handleSwitchToExpenseForm}/>) : (
+        showExpenseForm ? (<NewExpense addExpense={addExpenseHandler} onCloseForm={handleSwitchToExpenseForm} />) : (
           <FormGateWay onSwitchToExpenseForm={handleSwitchToExpenseForm} />
         )
       }
       {/* <NewExpense addExpense={addExpenseHandler}/> */}
-      <Expenses expenses={ExpenseData} />
+      <Expenses expenses={ExpenseData} monthData={expenses} />
       <Footer/>
     </div>
   );

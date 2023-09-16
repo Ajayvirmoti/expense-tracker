@@ -5,5 +5,9 @@
     border-radius: 10px;
     margin-bottom: 15px;
     background-color: aliceblue;   
+    justify-content: end;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
     
 }

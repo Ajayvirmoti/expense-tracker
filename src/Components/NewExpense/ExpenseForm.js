@@ -48,7 +48,7 @@ const ExpenseForm = (props) => {
     setInputDate(event.target.value);
 
   }
-
+  console.log("done1234")
   
 
   // Submit Button handler 
