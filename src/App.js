@@ -94,8 +94,7 @@ const App = () => {
   // console.log(month)
 
   return (
-    <div>
-
+    <div className='app'>
       {
         showExpenseForm ? (<NewExpense addExpense={addExpenseHandler} onCloseForm={handleSwitchToExpenseForm} />) : (
           <FormGateWay onSwitchToExpenseForm={handleSwitchToExpenseForm} />

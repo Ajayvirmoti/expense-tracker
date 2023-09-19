@@ -1,4 +1,9 @@
-.bar-graph_body{
+.bar-graph-body{
+    margin-bottom: 20px;
+}
+
+
+.bar-style{
     width: 20px;
     border-radius: 10px;
     height: 150px;
@@ -8,18 +13,32 @@
     /* align-items: center; */
     border-style: solid;
     border-color: teal;
-    border-width: 1px;
+    border-width: 0.1px;
+    margin-left: 3px;
+    margin-bottom: 5px;
+    
 }
 
-.bar-graph_inner{
+.bar-fill{
     /* color: black; */
     width: 100%;
-    
+   
     border-radius: 10px;
     /* border-top-left-radius: 0px; */
     /* border-top-right-radius: 0px; */
     background-color: aqua;
 }
 
+.bar-graph-level{
+    color: aliceblue;
+}
 
 
+@media only screen and (max-width: 768px) {
+    .bar-style{
+        width: 10px;
+        
+        
+    }
+    
+}
