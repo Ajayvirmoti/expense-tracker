@@ -43,7 +43,7 @@ const App = () => {
       amount: 634,
       date: new Date(2023, 8, 23),
 
-    }
+    },
     {
       id: 'e7',
       title: 'tea',
