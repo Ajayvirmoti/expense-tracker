@@ -4,14 +4,16 @@
 
 
 .bar-style{
-    width: 20px;
+    background-color: rgb(217, 255, 255);
+    width: 15px;
     border-radius: 10px;
-    height: 150px;
+    height: 120px;
     display: flex;
     align-items: flex-end;
     /* padding-top: 20px; */
     /* align-items: center; */
     border-style: solid;
+    border-radius: 3px;
     border-color: teal;
     border-width: 0.1px;
     margin-left: 3px;
@@ -22,15 +24,17 @@
 .bar-fill{
     /* color: black; */
     width: 100%;
-   
-    border-radius: 10px;
+    
+    border-radius: 3px;
     /* border-top-left-radius: 0px; */
     /* border-top-right-radius: 0px; */
-    background-color: aqua;
+    background-color: teal;
+    border-width: 1px;
 }
 
 .bar-graph-level{
-    color: aliceblue;
+    color: rgb(0, 48, 48);
+    font-size: 12px;
 }
 
 
