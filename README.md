@@ -4,10 +4,10 @@
 
 Setup for react project 
 ```
-$ git clone https://github.com/Ajayvirmoti/expense-tracker.git
-$ cd expense-tracker
-$ npm install
-$ npm start
+git clone https://github.com/Ajayvirmoti/expense-tracker.git
+cd expense-tracker
+npm install
+npm start
 ```
 
 
